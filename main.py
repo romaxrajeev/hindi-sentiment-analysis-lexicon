@@ -10,19 +10,6 @@ def get_comments(data):
                 comments.append(v)
 
 comments = ["में बहुत खुश था आज नहीं"]
-"""
-#Take the input
-videoID = input("Enter the video ID from Youtube:")
-
-#This video is from Aaj Tak, which contains some Hindi Comments, let's extract sentiment from these comments
-#Link: https://www.youtube.com/watch?v=Dt9iFZ0iVPM
-
-#Get results
-url = "https://www.googleapis.com/youtube/v3/commentThreads?key=AIzaSyAp-IJqZnF2M9c5vvv6ahqKKhzfgZnYu1o&textFormat=plainText&part=snippet&videoId="+videoID+"&maxResults=500"
-response = ur.urlopen(url)
-data = json.loads(response.read())
-get_comments(data)
-"""
 
 #Run task
 for comment in comments:
